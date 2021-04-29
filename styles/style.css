@@ -548,7 +548,8 @@ li a {
 
   h1 {
     font-size: 2.2rem;
-    margin-left: 1em;
+    margin-left: 0.5em;
+    letter-spacing: 0em;
   }
 
   h2 {
@@ -556,18 +557,19 @@ li a {
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     margin: -1em;
-    margin-left: 2.3em;
+    margin-left: 2em;
     color: white;
     padding-bottom: 2vh;
     margin-top: -1.5rem;
+    letter-spacing: 0em;
   }
 
   h3::after {
     content: '';
-    width: 88%;
+    width: 75%;
     height: 1px;
     display: block;
     padding-bottom: 1.5vh;
