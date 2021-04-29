@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make | Coffee Lab</title>
+    <meta name="description" content="A web app lets users make their own coffee, assists to calculate calories and nutrients, recommends fantastic coffee shops for people in Boston." />
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Coffee<span>Lab</span></h1>
+        <h3>Make your own coffee & Explore coffee shop in Boston</h3>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="step1.html">Make</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div class="add">
+        <h2 class="headline">Add Ingredients Now!</h2>
+        <div id="intro">
+            <p>Choose the ingredients you want to add to your coffee. You can choose as many ingredients as you want.
+            Once you've finished, click “Continue” to see the calories and nutrients of the coffee you made.
+           </p> 
+        </div>
+        </div>
+
+    <div class="container">
+      <div class="gallery" id = "gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="./image/almond milk.png" alt="Almond Milk" class="gallery__img">
+          <div class="coffee-choice">
+          <input type="checkbox" name="choice" id = "almondMilk" value="Almond Milk" onchange="ingredientsSelected(this.id)">
+          <span id="coffee">Almond Milk</span>
+         </div>
+      </figure>
+          <figure class="gallery__item gallery__item--2">
+              <img src="./image/brown sugar syrup.png" alt="Brown Sugar Syrup" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id="brownSugarSyrup" value="Brown Sugar Syrup" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Brown Sugar Syrup</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+              <img src="./image/caramel syrup.jpeg" alt="Caramel Syrup" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id="caramelSyrup" value="Caramel Syrup" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Caramel Syrup</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+              <img src="./image/foam.jpg" alt="Sweet Foam" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id = "sweetFoam" value="Sweet Foam" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Sweet Foam</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+              <img src="./image/ice.png" alt="Ice" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id= "ice" value="Ice" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Ice</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+              <img src="./image/Sugar.jpeg" alt="Sugar" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id="sugar" value="Sugar" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Sugar</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--7">
+              <img src="./image/whipped cream.jpg" alt="Whipped Cream" class="gallery__img">
+              <div class="coffee-choice">
+              <input type="checkbox" name="choice" id="whippedCream" value="Whipped Cream" onchange="ingredientsSelected(this.id)">
+              <span id="coffee">Whipped Cream</span>
+              </div>
+          </figure>
+          <figure class="gallery__item gallery__item--8">
+            <img src="./image/Whole Milk.png" alt="Whole Milk" class="gallery__img">
+            <div class="coffee-choice">
+            <input type="checkbox" name="choice" id="wholeMilk" value="Whole Milk" onchange="ingredientsSelected(this.id)">
+            <span id="coffee">Whole Milk</span>
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--9">
+          <img src="./image/vanilla syrup.jpeg" alt="Vanilla Syrup" class="gallery__img">
+          <div class="coffee-choice">
+          <input type="checkbox" name="choice" id="vanillaSyrup" value="Vanilla Syrup" onchange="ingredientsSelected(this.id)">
+          <span id="coffee">Vanilla Syrup</span>
+          </div>
+          </figure>
+      </div>
+
+    <div class="button" id="continue">
+      <a href="step3.html" class="btns">Continue</a>
+    </div>
+   </article>
+
+    <div id="output"></div>
+    <script src="./scripts/step2.js"></script>
+</body>
+</html>

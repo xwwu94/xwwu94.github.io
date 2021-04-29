@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make | Coffee Lab</title>
+    <meta name="description" content="A web app lets users make their own coffee, assists to calculate calories and nutrients, recommends fantastic coffee shops for people in Boston." />
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Coffee<span>Lab</span></h1>
+        <h3>Make your own coffee & Explore coffee shop in Boston</h3>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="step1.html">Make</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+      <div class="choose">
+        <h2 class="headline">Choose Coffee Now!</h2>
+        <div id="intro">
+            <p>Choose your favorite coffee genre. You can only choose one type of coffee.
+              Once you've finished, click “Continue” to add your ingredients.
+            </p> 
+        </div>
+        </div>
+
+        <div class="container">
+          <div class="gallery" id = "gallery">
+              <figure class="gallery__item gallery__item--1">
+                  <img src="./image/americano.jpg" alt="Americano" class="gallery__img coffeeRadio">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id="americano" value="Americano" onchange="coffeeSelection(this.id)">
+                  <span id="coffee">Americano</span>
+                  </div>
+                </figure>
+              <figure class="gallery__item gallery__item--2">
+                  <img src="./image/cappuccino.jpeg" alt="Cappuccino" class="gallery__img coffeeRadio">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id = "cappuccino" value="Cappuccino" onchange="coffeeSelection(this.id)">
+                  <span id="coffee">Cappuccino</span>
+                 </div>
+                </figure>
+              <figure class="gallery__item gallery__item--3">
+                  <img src="./image/cold brew.jpg" alt="Cold Brew" class="gallery__img coffeeRadio">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id="coldBrew" value="Cold Brew" onchange="coffeeSelection(this.id)">
+                  <span id="coffee">Cold Brew</span>
+                </div>
+              </figure>
+              <figure class="gallery__item gallery__item--4">
+                  <img src="./image/cortado.jpg" alt="Cortado" class="gallery__img coffeeRadio">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id="cortado" value="Cortado" onchange="coffeeSelection(this.id)">
+                  <span id="coffee">Cortado</span>
+                  </div>
+              </figure>
+              <figure class="gallery__item gallery__item--5">
+                  <img src="./image/espresso.jpg" alt="Espresso" class="gallery__img coffeeRadio">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id = "espresso" value="Espresso" onchange="coffeeSelection(this.id)">
+                  <span id="coffee">Espresso</span>
+                  </div> 
+              </figure>
+              <figure class="gallery__item gallery__item--6">
+                  <img src="./image/flat white.jpeg" alt="Flat White" class="gallery__img">
+                  <div class="coffee-choice">
+                  <input type="radio" name="choice" id = "flatWhite" value="Flat White">
+                  <span id="coffee">Flat White</span>
+                  </div>
+              </figure>
+              <figure class="gallery__item gallery__item--7">
+                <img src="./image/latte.jpg" alt="Latte" class="gallery__img coffeeRadio">
+                <div class="coffee-choice">
+                <input type="radio" name="choice" id="latte" value="Latte" onchange="coffeeSelection(this.id)">
+                <span id="coffee">Latte</span>
+                </div> 
+             </figure>
+              <figure class="gallery__item gallery__item--8">
+                <img src="./image/macchiato.jpg" alt="Macchiato" class="gallery__img coffeeRadio">
+                <div class="coffee-choice">
+                <input type="radio" name="choice" id="macchiato" value="Macchiato" onchange="coffeeSelection(this.id)">
+                <span id="coffee">Macchiato</span>
+                </div>
+              </figure>
+              <figure class="gallery__item gallery__item--9">
+                <img src="./image/mocha.jpeg" alt="Mocha" class="gallery__img coffeeRadio">
+                <div class="coffee-choice">
+                <input type="radio" name="choice" id = "mocha" value="Mocha" onchange="coffeeSelection(this.id)">
+                <span id="coffee">Mocha</span>
+                </div>
+              </figure>
+          </div>
+          <div class="button" id="continue">
+            <a href="step2.html" class="btns">Continue</a>
+          </div>
+  </article>
+  <div id="output"></div>
+  <script src="./scripts/step1.js"></script>
+</body>
+</html>
